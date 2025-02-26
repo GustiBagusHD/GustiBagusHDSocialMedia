@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>👤 Tentang Saya - GustiBagusHD</title>
+    <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.0.0/model-viewer.min.js"></script>
+    <link rel="icon" href="img/logo.png" type="image/jpeg">
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            background: linear-gradient(135deg, #1e3c72, #2a5298);
+            color: white;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            overflow-y: auto;
+            padding-bottom: 50px;
+        }
+        .content {
+            width: 90%;
+            max-width: 600px;
+            background: rgba(255, 255, 255, 0.1);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+            margin-bottom: 20px;
+        }
+        .content h1 {
+            font-size: 24px;
+            margin-bottom: 15px;
+        }
+        .profile-img {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            margin-bottom: 15px;
+            border: 3px solid white;
+        }
+        .back-button {
+            display: inline-block;
+            padding: 10px 15px;
+            margin-top: 15px;
+            background: rgba(255, 255, 255, 0.2);
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            transition: all 0.3s ease;
+        }
+        .back-button:hover {
+            background: rgba(255, 255, 255, 0.4);
+        }
+        model-viewer {
+            width: 100%;
+            max-width: 400px;
+            height: 300px;
+            margin-top: 20px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+        }
+        .credits {
+            margin-top: 50px;
+            font-size: 14px;
+            color: rgba(255, 255, 255, 0.7);
+        }
+    </style>
+</head>
+<body>
+    <div class="content">
+        <h1>👤 Tentang Saya</h1>
+        <img src="img/logo.png" alt="Foto Profil" class="profile-img">
+        <p>Tentang Gw</p>
+        <p><strong>Nama:</strong> GustiBagusManikBhaskara</p>
+        <p><strong>Umur:</strong> 12 tahun</p>
+        <p><strong>Tanggal Lahir:</strong> 4 November 2012</p>
+        <p><strong>Asal:</strong> Jalan Raya Kesambi, Kerobokan, Kuta Utara, Badung, Kerobokan, Kec. Kuta Utara, Kabupaten Badung, Bali 80361</p>
+        <p><strong>Hobi:</strong> Bermain game dan coding 🎮💻</p>
+        <a href="index.html" class="back-button">⬅ Kembali ke Beranda</a>
+    </div>
+    <model-viewer 
+        src="3dmodel/model.glb" 
+        alt="Model 3D Hatsune Miku" 
+        auto-rotate 
+        camera-controls 
+        ar>
+    </model-viewer>
+    <div class="credits">✨ Dibuat oleh GustiBagusHD✨</div>
+</body>
+</html>
